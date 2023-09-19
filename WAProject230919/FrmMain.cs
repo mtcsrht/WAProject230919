@@ -33,12 +33,28 @@ namespace WAProject230919
 
         private void BtnTorlesClick(object sender, EventArgs e)
         {
+            
             pbSadCat.Image = null;
         }
 
         private void BtnRandomClick(object sender, EventArgs e)
         {
+            clickCounter++;
             pbSadCat.Image = sadcats[rnd.Next(sadcats.Length)];
+            if (clickCounter == 10)
+            {
+                DialogResult result = MessageBox.Show(
+                    caption: "FIGYELMEZTETÉS!!44!!!44!!!",
+                    text: "Elég lesz mára b+\nAbbahagyod???",
+                    icon: MessageBoxIcon.Warning,
+                    buttons: MessageBoxButtons.YesNo
+                    );
+
+                if (result == DialogResult.Yes)
+                {
+                    Application.Exit();
+                }
+            }
         }
     }
 }
