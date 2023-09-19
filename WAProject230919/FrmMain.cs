@@ -15,6 +15,7 @@ namespace WAProject230919
     {
         static Random rnd = new Random();
         private int clickCounter = 0;
+        private bool szopassam = false;
 
         static Image[] sadcats =
         {
@@ -29,6 +30,16 @@ namespace WAProject230919
             InitializeComponent();
             btnRandom.Click += BtnRandomClick;
             btnTorles.Click += BtnTorlesClick;
+            btnExit.MouseEnter += BtnExitMouseEnter;
+        }
+
+        private void BtnExitMouseEnter(object sender, EventArgs e)
+        {
+            if (szopassam)
+                btnExit.Location = new Point(
+                    x:  rnd.Next(this.Width - btnExit.Width),
+                    y: rnd.Next(this.Height - btnExit.Height)
+                    );
         }
 
         private void BtnTorlesClick(object sender, EventArgs e)
@@ -52,8 +63,15 @@ namespace WAProject230919
 
                 if (result == DialogResult.Yes)
                     Application.Exit();
+                else
+                    szopassam = true;
             }
 
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

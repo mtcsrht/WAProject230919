@@ -106,6 +106,7 @@ namespace WAProject230919
             this.btnExit.TabStop = false;
             this.btnExit.Text = "X";
             this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // FrmMain
             // 
