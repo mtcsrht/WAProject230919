@@ -51,10 +51,9 @@ namespace WAProject230919
                     );
 
                 if (result == DialogResult.Yes)
-                {
                     Application.Exit();
-                }
             }
+
         }
     }
 }

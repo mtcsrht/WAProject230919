@@ -34,6 +34,7 @@ namespace WAProject230919
             this.pbSadCat = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btnRandom = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbSadCat)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -59,7 +60,7 @@ namespace WAProject230919
             this.pbSadCat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pbSadCat.Location = new System.Drawing.Point(204, 3);
             this.pbSadCat.Name = "pbSadCat";
-            this.pbSadCat.Size = new System.Drawing.Size(597, 421);
+            this.pbSadCat.Size = new System.Drawing.Size(597, 375);
             this.pbSadCat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbSadCat.TabIndex = 1;
             this.pbSadCat.TabStop = false;
@@ -74,12 +75,12 @@ namespace WAProject230919
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.Controls.Add(this.pbSadCat, 1, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 12);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 58);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 427F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1005, 427);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 381F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1005, 381);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
             // btnRandom
@@ -94,16 +95,30 @@ namespace WAProject230919
             this.btnRandom.Text = "Random";
             this.btnRandom.UseVisualStyleBackColor = false;
             // 
+            // btnExit
+            // 
+            this.btnExit.BackColor = System.Drawing.Color.Transparent;
+            this.btnExit.ForeColor = System.Drawing.Color.Red;
+            this.btnExit.Location = new System.Drawing.Point(977, 12);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(40, 40);
+            this.btnExit.TabIndex = 3;
+            this.btnExit.TabStop = false;
+            this.btnExit.Text = "X";
+            this.btnExit.UseVisualStyleBackColor = false;
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1029, 518);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnRandom);
             this.Controls.Add(this.btnTorles);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FrmMain";
@@ -120,6 +135,7 @@ namespace WAProject230919
         private System.Windows.Forms.PictureBox pbSadCat;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button btnRandom;
+        private System.Windows.Forms.Button btnExit;
     }
 }
 
